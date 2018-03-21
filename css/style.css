@@ -1,0 +1,221 @@
+﻿/*Font*/
+@font-face {
+    font-family: "Childs Play";
+    src: url(../fonts/child.ttf) format('truetype');
+    src: url(../fonts/child.eot) format('embedded opentype');
+    src: url(../fonts/child.woff) format('woff');
+}
+
+/*Body styling*/
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/*Font and formatting properties*/
+
+h1, h2, h3 {
+    font-family: Childs Play, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+c1 { /*figure caption, to be used inside <figcaption> tags*/
+    font-family: Childs Play, Arial, Helvetica, sans-serif; 
+    font-size: 25px;
+}
+
+t1 { /*not used at the moment*/
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+f1 { /*footer styling*/
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p1 { /*default paragraph*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/*Element styling*/
+
+#container { /*container that holds all elements of the website*/
+    width: 100%;
+}
+
+#header { /*header area which contains buttons (desktop only) and logo*/
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    opacity: 0.97;
+    z-index: 2;
+}
+
+#logo { /*logo styling*/
+    padding: 1% 1% 1% 1%;
+    position: relative;
+    height: 85%;
+    width: auto;
+}
+
+.menu { /*class to hold the menu buttons on the desktop website*/
+    top: 0;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+    float: right;
+}
+
+.button { /*default button class styling*/
+    background-color: #aed2a7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+button:focus { /*remove outline from buttons in certain browsers (Google Chrome)*/
+    outline: 0;
+}
+
+.button:hover { /*styles for button hover*/
+    background-color: #fbc477;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.menu-button { /*styling for the buttons in the menu (desktop only)*/
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 160px;
+    border: none;
+    outline: none;
+}
+
+menu-button:focus { /*remove outline from buttons in certain browsers (Google Chrome)*/
+    outline: 0;
+}
+
+.menu-button:hover { /*styles for menu button hover (desktop only)*/
+    background-color: #fbc477;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.current { /*class added to the button to signify that it is the button for the current page*/
+    background-color: #fbc477;
+}
+
+#hero { /*styling for the feature image on each page (image directly underneath the header)*/
+    width: 100%;
+    height: 30%;
+    z-index: 1;
+}
+
+#textcontainer { /*styling for the container that holds just the text and assets such as Siema slideshows*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: -17%;
+    width: 75%;
+    background-color: white;
+    border-radius: 45px 45px 0px 0px;
+    z-index: 1;
+    padding: 2% 2% 2% 2%;
+    text-align:justify;
+}
+
+.siema, .siema1, .siema5, .siema6, .siema7, .siema8 { /*Siema slideshows, can add more classes to this if more slideshows are requieed*/
+    width: 100%;
+}
+
+#siemaimg { /*styling for the image in the Siema slideshow (they're all the same for each slideshow)*/
+    width: 100%;
+}
+
+#groupicons { /*only applicable for the 'Groups' page*/
+    left: 0%;
+    margin-left: 5%;
+    width: auto;
+}
+
+#topofpage { /*only applicable for the 'Groups' page*/
+    float: right;
+    right: 0;
+    padding-right: 2%;
+}
+
+/*See Tiles stylesheet for tile styling*/
+
+.bottommenu { /*Visible only on mobile devices and low screen resolutions*/
+    visibility: hidden; /*Visible only on media query on mobile devices*/
+    text-align: center;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 60%;
+    background-color: #aed2a7;
+    z-index: 1001;
+    bottom: 0;
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+}
+
+.hamburger { /*Visible only on mobile devices and low screen resolutions*/
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#footer { /*styling for the footer*/   
+    position: relative;
+    z-index: 1;
+}
+
+#footerimage { /*styling for the image in the footer area*/
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#footertext { /*styling for the text in the footer area*/
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
